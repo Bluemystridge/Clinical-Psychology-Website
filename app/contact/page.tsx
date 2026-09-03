@@ -53,7 +53,7 @@ export default function Contact() {
 
           <div className="bg-gray-50 p-8 rounded-lg">
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Appointment Request</h2>
-            <form action="https://formspree.io/f/mwpezbwd" method="POST" className="space-y-4">
+            <form action="https://formspree.io/f/xwlkbzpe" method="POST" className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                 <input 
