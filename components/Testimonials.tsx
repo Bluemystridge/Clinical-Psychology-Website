@@ -1,18 +1,8 @@
 export function Testimonials() {
   const testimonials = [
     {
-      name: 'Rose F.',
+      name: 'Rose A.',
       text: 'Alvaro has helped me understand myself, my tendencies, and my fears in a whole new light. His genuine questions and guidance have helped me get back in touch with parts of myself I haven\'t seen in years.',
-      rating: 5
-    },
-    {
-      name: 'James T.',
-      text: 'Professional, compassionate, and truly listens. Made a real difference in my life.',
-      rating: 5
-    },
-    {
-      name: 'Emma L.',
-      text: 'The best therapist I\'ve ever worked with. Clear guidance and genuine care.',
       rating: 5
     },
   ]
