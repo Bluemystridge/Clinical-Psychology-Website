@@ -22,9 +22,12 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="text-gray-400">info@alvaroridge.com</p>
-            <p className="text-gray-400">(123) 456-7890</p>
+            <h4 className="font-semibold mb-4">Follow</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li><a href="#" className="hover:text-primary transition">LinkedIn</a></li>
+              <li><a href="#" className="hover:text-primary transition">Twitter</a></li>
+              <li><a href="#" className="hover:text-primary transition">Facebook</a></li>
+            </ul>
           </div>
         </div>
         
