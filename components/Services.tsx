@@ -1,9 +1,18 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Services() {
   const services = [
-    { title: 'Individual Therapy', icon: '👤', desc: 'One-on-one counseling for anxiety, depression, and life challenges' },
-    { title: 'Group Therapy', icon: '👥', desc: 'Therapeutic sessions in a supportive group environment' },
+    { 
+      title: 'Individual Therapy', 
+      image: '/images/individual-therapy.png',
+      desc: 'One-on-one counseling for anxiety, depression, and life challenges' 
+    },
+    { 
+      title: 'Group Therapy', 
+      image: '/images/group-therapy.png',
+      desc: 'Therapeutic sessions in a supportive group environment' 
+    },
   ]
 
   return (
@@ -13,7 +22,14 @@ export function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, i) => (
             <div key={i} className="bg-white p-8 rounded-lg shadow hover:shadow-lg transition">
-              <div className="text-5xl mb-4">{service.icon}</div>
+              <div className="relative w-full h-64 mb-4">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover rounded"
+                />
+              </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-3">{service.title}</h3>
               <p className="text-gray-600">{service.desc}</p>
               <p className="text-sm text-gray-500 mt-4">Standard sessions are 50 minutes</p>
