@@ -29,8 +29,8 @@ export default function Contact() {
 
               <div>
                 <h3 className="font-semibold text-primary mb-2">Email</h3>
-                <a href="mailto:info@alvaroridge.com" className="text-gray-700 hover:text-primary">
-                  info@alvaroridge.com
+                <a href="mailto:alvaro9ridge@gmail.com" className="text-gray-700 hover:text-primary">
+                  alvaro9ridge@gmail.com
                 </a>
               </div>
 
@@ -53,27 +53,52 @@ export default function Contact() {
 
           <div className="bg-gray-50 p-8 rounded-lg">
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Appointment Request</h2>
-            <form className="space-y-4">
+            <form action="https://formspree.io/f/mwpezbwd" method="POST" className="space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                <input type="text" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" />
+                <input 
+                  type="text" 
+                  name="name"
+                  required
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" 
+                />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                <input type="email" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" />
+                <input 
+                  type="email" 
+                  name="email"
+                  required
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" 
+                />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                <input type="tel" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" />
+                <input 
+                  type="tel" 
+                  name="phone"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" 
+                />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea rows={4} className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                <textarea 
+                  rows={4} 
+                  name="message"
+                  required
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                ></textarea>
               </div>
-              <button type="submit" className="w-full bg-primary text-white font-semibold py-2 rounded-lg hover:bg-opacity-90 transition">
+              <button 
+                type="submit" 
+                className="w-full bg-primary text-white font-semibold py-2 rounded-lg hover:bg-opacity-90 transition"
+              >
                 Send Request
               </button>
             </form>
+            <p className="text-xs text-gray-500 mt-4">
+              Your message will be sent directly to alvaro9ridge@gmail.com
+            </p>
           </div>
         </div>
       </div>
