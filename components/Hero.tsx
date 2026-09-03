@@ -6,7 +6,7 @@ export function Hero() {
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h1 className="text-5xl font-bold mb-6">Welcome to Your Mental Health Journey</h1>
         <p className="text-xl mb-8 opacity-90">
-          Expert clinical psychology and counseling services tailored to your unique needs
+          Expert clinical psychology and counseling services tailored to your needs
         </p>
         <div className="flex justify-center gap-4 flex-wrap">
           <Link 
