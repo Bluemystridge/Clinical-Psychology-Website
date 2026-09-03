@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Services - Alvaro Ridge',
@@ -10,12 +11,12 @@ export default function Services() {
     {
       title: 'Individual Therapy',
       description: 'One-on-one counseling sessions addressing anxiety, depression, trauma, and life challenges.',
-      icon: '👤'
+      image: '/images/individual-therapy.png'
     },
     {
       title: 'Group Therapy',
       description: 'Therapeutic sessions in a supportive group environment for shared experiences and collective healing.',
-      icon: '👥'
+      image: '/images/group-therapy.png'
     },
   ]
 
@@ -29,10 +30,19 @@ export default function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+            <div key={index} className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="relative w-full h-80">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
+                <p className="text-gray-600">{service.description}</p>
+              </div>
             </div>
           ))}
         </div>
