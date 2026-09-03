@@ -17,9 +17,6 @@ export default function About() {
             <p className="text-gray-700 leading-relaxed mb-4">
               I am Alvaro Ridge, a licensed clinical psychologist in Madrid providing tailored therapy services. My professional experience focuses on anxiety, depression, neurodivergence, and LGBTQ+ support, as well as life transitions and relationship communication and management.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              I combine a holistic and integrative therapy approach that takes into account the person suffering underneath the diagnosis. My goal is to enable my clients to live a more fulfilling and healthy life.
-            </p>
             
             <h3 className="text-xl font-semibold text-primary mt-8 mb-4">Areas of Specialization</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -48,11 +45,6 @@ export default function About() {
                 <p className="text-gray-700 text-sm">Building healthier, more authentic connections with others.</p>
               </div>
             </div>
-
-            <h3 className="text-xl font-semibold text-primary mt-8 mb-3">My Therapeutic Approach</h3>
-            <p className="text-gray-700 leading-relaxed">
-              I combine a holistic and integrative therapy approach that takes into account the person suffering underneath the diagnosis. My goal is to enable my clients to live a more fulfilling and healthy life.
-            </p>
           </div>
 
           <div className="bg-primary text-white p-6 rounded-lg h-fit sticky top-20">
