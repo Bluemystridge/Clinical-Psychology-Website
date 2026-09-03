@@ -21,7 +21,7 @@ export default function Services() {
             {/* Image */}
             <div className="relative w-full h-96 md:h-full">
               <Image
-                src="/images/individual-therapy.png"
+                src="/Individual Therapy.png"
                 alt="Individual Therapy"
                 fill
                 className="object-cover"
@@ -85,7 +85,7 @@ export default function Services() {
             {/* Image */}
             <div className="relative w-full h-96 md:h-full order-1 md:order-2">
               <Image
-                src="/images/group-therapy.png"
+                src="/Group Therapy.png"
                 alt="Group Therapy"
                 fill
                 className="object-cover"
