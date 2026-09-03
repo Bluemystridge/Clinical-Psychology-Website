@@ -1,8 +1,8 @@
 export function Testimonials() {
   const testimonials = [
     {
-      name: 'Sarah M.',
-      text: 'Dr. Ridge helped me work through anxiety in ways I never thought possible. Highly recommend!',
+      name: 'Rose F.',
+      text: 'Alvaro has helped me understand myself, my tendencies, and my fears in a whole new light. His genuine questions and guidance have helped me get back in touch with parts of myself I haven\'t seen in years.',
       rating: 5
     },
     {
