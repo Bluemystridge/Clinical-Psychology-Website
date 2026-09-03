@@ -5,12 +5,12 @@ export function Services() {
   const services = [
     { 
       title: 'Individual Therapy', 
-      image: '/images/individual-therapy.png',
+      image: '/Individual Therapy.png',
       desc: 'One-on-one counseling for anxiety, depression, and life challenges' 
     },
     { 
       title: 'Group Therapy', 
-      image: '/images/group-therapy.png',
+      image: '/Group Therapy.png',
       desc: 'Therapeutic sessions in a supportive group environment' 
     },
   ]
@@ -28,6 +28,7 @@ export function Services() {
                   alt={service.title}
                   fill
                   className="object-cover rounded"
+                  priority
                 />
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-3">{service.title}</h3>
