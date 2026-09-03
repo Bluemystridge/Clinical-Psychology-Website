@@ -13,37 +13,93 @@ export default function About() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="md:col-span-2">
-            <h2 className="text-2xl font-semibold text-primary mb-4">Professional Background</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-4">Welcome to My Practice</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Welcome to my practice. I am a licensed clinical psychologist dedicated to providing compassionate, evidence-based care to individuals seeking mental health support and personal growth.
+              I am Alvaro Ridge, a licensed clinical psychologist in Madrid providing tailored therapy services. My professional experience focuses on anxiety, depression, neurodivergence, and LGBTQ+ support, as well as life transitions and relationship communication and management.
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
-              With years of experience in clinical psychology, I specialize in helping clients navigate life challenges, overcome anxiety and depression, and develop healthier coping strategies.
+              I combine a holistic and integrative therapy approach that takes into account the person suffering underneath the diagnosis. My goal is to enable my clients to live a more fulfilling and healthy life.
             </p>
             
-            <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Education & Credentials</h3>
-            <ul className="text-gray-700 space-y-2 mb-4">
-              <li>• Ph.D. in Clinical Psychology</li>
-              <li>• Licensed Clinical Psychologist</li>
-              <li>• Board Certified in Clinical Psychology</li>
-              <li>• Specialized Training in Evidence-Based Therapies</li>
-            </ul>
+            <h3 className="text-xl font-semibold text-primary mt-8 mb-4">Areas of Specialization</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="border-l-4 border-primary pl-4">
+                <h4 className="font-semibold text-gray-900 mb-2">Anxiety Disorders</h4>
+                <p className="text-gray-700 text-sm">From generalized anxiety to panic, I help clients develop practical coping strategies and lasting relief.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h4 className="font-semibold text-gray-900 mb-2">Depression</h4>
+                <p className="text-gray-700 text-sm">Supporting clients through depressive episodes with compassionate, evidence-based care.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h4 className="font-semibold text-gray-900 mb-2">Neurodivergence</h4>
+                <p className="text-gray-700 text-sm">Specialized support for ADHD, autism, and other neurodivergent experiences.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h4 className="font-semibold text-gray-900 mb-2">LGBTQ+ Support</h4>
+                <p className="text-gray-700 text-sm">Creating a safe, affirming space for all identities and sexual orientations.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h4 className="font-semibold text-gray-900 mb-2">Life Transitions</h4>
+                <p className="text-gray-700 text-sm">Navigating major life changes with clarity and confidence.</p>
+              </div>
+              <div className="border-l-4 border-primary pl-4">
+                <h4 className="font-semibold text-gray-900 mb-2">Relationship Communication</h4>
+                <p className="text-gray-700 text-sm">Building healthier, more authentic connections with others.</p>
+              </div>
+            </div>
 
-            <h3 className="text-xl font-semibold text-primary mt-8 mb-3">Therapeutic Approach</h3>
-            <p className="text-gray-700 leading-relaxed">
-              I utilize evidence-based therapeutic approaches including Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), and psychodynamic therapy. My approach is tailored to each client's unique needs and goals.
+            <h3 className="text-xl font-semibold text-primary mt-8 mb-3">My Therapeutic Approach</h3>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              I blend multiple therapeutic modalities to create personalized treatment plans that work for you. Rather than applying a one-size-fits-all approach, I take time to understand your unique context, values, and goals.
             </p>
-          </div>
-
-          <div className="bg-primary text-white p-6 rounded-lg h-fit">
-            <h3 className="text-xl font-semibold mb-4">Quick Facts</h3>
-            <ul className="space-y-3 text-sm">
-              <li><strong>License:</strong> Clinical Psychology</li>
-              <li><strong>Experience:</strong> 10+ Years</li>
-              <li><strong>Specialties:</strong> Anxiety, Depression, Life Transitions</li>
-              <li><strong>Modalities:</strong> Individual & Group Therapy</li>
+            
+            <p className="text-gray-700 leading-relaxed">
+              <strong>What to expect:</strong>
+            </p>
+            <ul className="text-gray-700 space-y-2 mb-4 ml-4">
+              <li>• A safe, confidential, and non-judgmental space</li>
+              <li>• Evidence-based therapeutic techniques tailored to your needs</li>
+              <li>• Focus on practical tools and sustainable change</li>
+              <li>• Genuine partnership in your healing journey</li>
             </ul>
           </div>
+
+          <div className="bg-primary text-white p-6 rounded-lg h-fit sticky top-20">
+            <h3 className="text-xl font-semibold mb-6">Quick Facts</h3>
+            <div className="space-y-4 text-sm">
+              <div>
+                <p className="font-semibold">License</p>
+                <p className="text-blue-100">Licensed Clinical Psychologist</p>
+              </div>
+              <div>
+                <p className="font-semibold">Location</p>
+                <p className="text-blue-100">Madrid</p>
+              </div>
+              <div>
+                <p className="font-semibold">Experience</p>
+                <p className="text-blue-100">10+ Years</p>
+              </div>
+              <div>
+                <p className="font-semibold">Modalities</p>
+                <p className="text-blue-100">Individual & Group Therapy</p>
+              </div>
+              <div>
+                <p className="font-semibold">Specialties</p>
+                <p className="text-blue-100">Anxiety, Depression, Neurodivergence, LGBTQ+, Life Transitions, Relationship Communication</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-blue-50 p-8 rounded-lg text-center">
+          <h3 className="text-2xl font-semibold text-gray-900 mb-3">Ready to Begin?</h3>
+          <p className="text-gray-700 mb-6">
+            If you're considering therapy, or if you have questions about my services, I'd love to hear from you.
+          </p>
+          <a href="/contact" className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+            Schedule a Consultation
+          </a>
         </div>
       </div>
     </div>
