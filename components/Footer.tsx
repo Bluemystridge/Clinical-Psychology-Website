@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold text-primary mb-4">Dr. Alvaro Ridge</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">Alvaro Ridge</h3>
             <p className="text-gray-400">Professional clinical psychology and counseling services</p>
           </div>
           
@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Dr. Alvaro Ridge. All rights reserved.</p>
+          <p>&copy; {currentYear} Alvaro Ridge. All rights reserved.</p>
           <p className="text-sm mt-2">Confidentiality and Privacy Notice: All client information is treated with strict confidentiality.</p>
         </div>
       </div>

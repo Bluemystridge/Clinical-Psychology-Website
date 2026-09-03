@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Services - Dr. Alvaro Ridge',
+  title: 'Services - Alvaro Ridge',
   description: 'Explore the clinical psychology and counseling services offered.',
 }
 
@@ -13,29 +13,9 @@ export default function Services() {
       icon: '👤'
     },
     {
-      title: 'Couples Therapy',
-      description: 'Professional mediation and support for couples working through relationship issues.',
+      title: 'Group Therapy',
+      description: 'Therapeutic sessions in a supportive group environment for shared experiences and collective healing.',
       icon: '👥'
-    },
-    {
-      title: 'Crisis Support',
-      description: 'Immediate mental health support during difficult times and emotional crises.',
-      icon: '🆘'
-    },
-    {
-      title: 'Cognitive Behavioral Therapy',
-      description: 'Evidence-based treatment for depression, anxiety, and behavioral concerns.',
-      icon: '🧠'
-    },
-    {
-      title: 'Life Transitions',
-      description: 'Guidance through major life changes including career shifts, loss, and identity.',
-      icon: '🌱'
-    },
-    {
-      title: 'Stress Management',
-      description: 'Practical strategies and techniques to manage stress and improve wellbeing.',
-      icon: '🧘'
     },
   ]
 
@@ -47,7 +27,7 @@ export default function Services() {
           Comprehensive mental health support tailored to your unique needs
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div key={index} className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="text-4xl mb-4">{service.icon}</div>
@@ -62,7 +42,7 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <h3 className="font-semibold text-primary mb-2">Session Duration</h3>
-              <p className="text-gray-700">Standard sessions are 50-60 minutes</p>
+              <p className="text-gray-700">Standard sessions are 50 minutes</p>
             </div>
             <div>
               <h3 className="font-semibold text-primary mb-2">Frequency</h3>
@@ -71,10 +51,6 @@ export default function Services() {
             <div>
               <h3 className="font-semibold text-primary mb-2">Confidentiality</h3>
               <p className="text-gray-700">All sessions are completely confidential</p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-primary mb-2">Insurance</h3>
-              <p className="text-gray-700">We accept most major insurance plans</p>
             </div>
           </div>
         </div>

@@ -1,15 +1,15 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Dr. Alvaro Ridge',
-  description: 'Learn about Dr. Alvaro Ridge\'s background, credentials, and approach to clinical psychology.',
+  title: 'About Alvaro Ridge',
+  description: 'Learn about Alvaro Ridge\'s background, credentials, and approach to clinical psychology.',
 }
 
 export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">About Dr. Alvaro Ridge</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-8">About Alvaro Ridge</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="md:col-span-2">
@@ -41,7 +41,7 @@ export default function About() {
               <li><strong>License:</strong> Clinical Psychology</li>
               <li><strong>Experience:</strong> 10+ Years</li>
               <li><strong>Specialties:</strong> Anxiety, Depression, Life Transitions</li>
-              <li><strong>Modalities:</strong> Individual & Couples Therapy</li>
+              <li><strong>Modalities:</strong> Individual & Group Therapy</li>
             </ul>
           </div>
         </div>

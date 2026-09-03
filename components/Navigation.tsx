@@ -10,7 +10,7 @@ export default function Navigation() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-primary">
-          Dr. Alvaro Ridge
+          Alvaro Ridge
         </Link>
         
         <div className="hidden md:flex space-x-8">
