@@ -15,42 +15,7 @@ export default function Contact() {
           Ready to start your journey to better mental health? Reach out today.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h2>
-            
-            <div className="space-y-6">
-              <div>
-                <h3 className="font-semibold text-primary mb-2">Phone</h3>
-                <a href="tel:+1234567890" className="text-gray-700 hover:text-primary">
-                  (123) 456-7890
-                </a>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-primary mb-2">Email</h3>
-                <a href="mailto:alvaro9ridge@gmail.com" className="text-gray-700 hover:text-primary">
-                  alvaro9ridge@gmail.com
-                </a>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-primary mb-2">Office Hours</h3>
-                <p className="text-gray-700">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p className="text-gray-700">Saturday: 10:00 AM - 2:00 PM</p>
-                <p className="text-gray-700">Sunday: Closed</p>
-              </div>
-
-              <div>
-                <h3 className="font-semibold text-primary mb-2">Office Location</h3>
-                <p className="text-gray-700">
-                  [Your Office Address]<br />
-                  [City, State ZIP]
-                </p>
-              </div>
-            </div>
-          </div>
-
+        <div className="max-w-2xl mx-auto">
           <div className="bg-gray-50 p-8 rounded-lg">
             <h2 className="text-2xl font-semibold text-gray-900 mb-6">Appointment Request</h2>
             <form action="https://formspree.io/f/xwlkbzpe" method="POST" className="space-y-4">
