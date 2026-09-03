@@ -50,19 +50,9 @@ export default function About() {
             </div>
 
             <h3 className="text-xl font-semibold text-primary mt-8 mb-3">My Therapeutic Approach</h3>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              I blend multiple therapeutic modalities to create personalized treatment plans that work for you. Rather than applying a one-size-fits-all approach, I take time to understand your unique context, values, and goals.
-            </p>
-            
             <p className="text-gray-700 leading-relaxed">
-              <strong>What to expect:</strong>
+              I combine a holistic and integrative therapy approach that takes into account the person suffering underneath the diagnosis. My goal is to enable my clients to live a more fulfilling and healthy life.
             </p>
-            <ul className="text-gray-700 space-y-2 mb-4 ml-4">
-              <li>• A safe, confidential, and non-judgmental space</li>
-              <li>• Evidence-based therapeutic techniques tailored to your needs</li>
-              <li>• Focus on practical tools and sustainable change</li>
-              <li>• Genuine partnership in your healing journey</li>
-            </ul>
           </div>
 
           <div className="bg-primary text-white p-6 rounded-lg h-fit sticky top-20">
