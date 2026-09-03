@@ -45,6 +45,11 @@ export default function About() {
                 <p className="text-gray-700 text-sm">Building healthier, more authentic connections with others.</p>
               </div>
             </div>
+
+            <h3 className="text-xl font-semibold text-primary mt-8 mb-3">My Therapeutic Approach</h3>
+            <p className="text-gray-700 leading-relaxed">
+              I combine a holistic and integrative therapy approach that takes into account the person suffering underneath the diagnosis. My goal is to enable my clients to live a more fulfilling and healthy life.
+            </p>
           </div>
 
           <div className="bg-primary text-white p-6 rounded-lg h-fit sticky top-20">
