@@ -25,6 +25,7 @@ export default function Services() {
                 alt="Individual Therapy"
                 fill
                 className="object-cover"
+                priority
               />
             </div>
             {/* Content */}
@@ -37,7 +38,7 @@ export default function Services() {
                 <div>
                   <h3 className="font-semibold text-primary mb-2">What to Expect</h3>
                   <p className="text-gray-700">
-                    In individual therapy, you'll work directly with me in a confidential, safe environment tailored specifically to your needs and goals.
+                    In individual therapy, you'll work directly with me in a confidential, safe environment tailored specifically to your needs and goals. We'll explore your thoughts, feelings, and behaviors to develop practical strategies for positive change.
                   </p>
                 </div>
                 <div>
@@ -46,6 +47,7 @@ export default function Services() {
                     <li>• Standard sessions: 50 minutes</li>
                     <li>• Frequency: Typically weekly, adjustable based on needs</li>
                     <li>• Complete confidentiality guaranteed</li>
+                    <li>• Evidence-based therapeutic approaches</li>
                   </ul>
                 </div>
               </div>
@@ -66,7 +68,7 @@ export default function Services() {
                 <div>
                   <h3 className="font-semibold text-primary mb-2">Benefits of Group Work</h3>
                   <p className="text-gray-700">
-                    Group therapy provides unique therapeutic benefits including peer support, shared experiences, and learning from others facing similar challenges.
+                    Group therapy provides unique therapeutic benefits including peer support, shared experiences, learning from others facing similar challenges, and developing social skills in a safe environment. The group dynamic itself becomes a powerful healing force.
                   </p>
                 </div>
                 <div>
@@ -75,6 +77,7 @@ export default function Services() {
                     <li>• Standard sessions: 60 minutes</li>
                     <li>• Small group setting (6-8 participants)</li>
                     <li>• Strict confidentiality and respect maintained</li>
+                    <li>• Diverse therapeutic focuses available</li>
                   </ul>
                 </div>
               </div>
@@ -86,6 +89,7 @@ export default function Services() {
                 alt="Group Therapy"
                 fill
                 className="object-cover"
+                priority
               />
             </div>
           </div>
@@ -97,17 +101,26 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="font-semibold text-primary mb-2">Confidentiality</h3>
-              <p className="text-gray-700">All sessions are completely confidential and protected by professional ethics guidelines.</p>
+              <p className="text-gray-700">All sessions are completely confidential and protected by professional ethics guidelines and legal regulations.</p>
             </div>
             <div>
               <h3 className="font-semibold text-primary mb-2">Flexible Scheduling</h3>
-              <p className="text-gray-700">Sessions can be adjusted based on your availability and therapeutic needs.</p>
+              <p className="text-gray-700">Sessions can be adjusted based on your availability and therapeutic needs to ensure consistent care.</p>
             </div>
             <div>
               <h3 className="font-semibold text-primary mb-2">Evidence-Based Care</h3>
-              <p className="text-gray-700">All treatments are grounded in the latest clinical research and best practices.</p>
+              <p className="text-gray-700">All treatments are grounded in the latest clinical research and best practices in psychology.</p>
             </div>
           </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="mt-16 bg-primary text-white p-8 rounded-lg text-center">
+          <h2 className="text-2xl font-bold mb-4">Ready to Begin Your Journey?</h2>
+          <p className="text-lg mb-6">Contact us today to schedule your first session and take the first step toward positive change.</p>
+          <a href="/contact" className="inline-block bg-white text-primary px-8 py-3 rounded font-semibold hover:bg-gray-100 transition">
+            Get in Touch
+          </a>
         </div>
       </div>
     </div>
