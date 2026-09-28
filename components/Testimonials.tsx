@@ -5,6 +5,11 @@ export function Testimonials() {
       text: 'Alvaro has helped me understand myself, my tendencies, and my fears in a whole new light. His genuine questions and guidance have helped me get back in touch with parts of myself I haven\'t seen in years.',
       rating: 5
     },
+    {
+      name: 'Susie W.',
+      text: 'I had the privilege of meeting with Alvaro during a significant life transition. He was patient, kind, and thoughtful as he helped me navigate a sensitive issue. His insightful questions encouraged me to explore underlying emotions I hadn’t realized were affecting my well-being. His empathetic, nonjudgmental approach created a safe and comfortable space for what became a deeply cathartic experience. I am grateful for his support and would highly recommend Alvaro to anyone seeking a compassionate and thoughtful therapist.',
+      rating: 5
+    },
   ]
 
   return (
