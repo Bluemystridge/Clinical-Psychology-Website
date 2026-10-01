@@ -8,6 +8,7 @@ A modern, professional website for clinical counseling services built with Next.
 - **SEO Optimized** - Built-in metadata and open graph tags
 - **Professional UI** - Clean, modern design with Tailwind CSS
 - **Multiple Pages** - Home, About, Services, and Contact pages
+- **Spanish Language** - Fully translated Spanish pages available from the language switcher
 - **Contact Form** - Ready-to-implement appointment request form
 - **Performance** - Optimized for fast loading and excellent performance
 
@@ -17,6 +18,7 @@ A modern, professional website for clinical counseling services built with Next.
 - **About** - Background and credentials of Dr. Alvaro Ridge
 - **Services** - Detailed list of clinical psychology services
 - **Contact** - Contact information and appointment request form
+- **Spanish pages** - Spanish versions of Home, About, Services, and Contact under `/es`
 
 ## Technology Stack
 
@@ -108,8 +110,10 @@ To use your paid domain:
 │   ├── about/             # About page
 │   ├── services/          # Services page
 │   ├── contact/           # Contact page
+│   ├── es/                 # Spanish-language pages
 │   ├── layout.tsx         # Root layout
 │   └── globals.css        # Global styles
+├── middleware.ts           # Sets the document language for each locale
 ├── components/            # Reusable React components
 │   ├── Navigation.tsx     # Header navigation
 │   ├── Footer.tsx         # Footer
