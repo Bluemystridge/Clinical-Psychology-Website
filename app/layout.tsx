@@ -4,17 +4,33 @@ import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
-export const metadata: Metadata = {
-  title: 'Alvaro Ridge - Clinical Psychology and Counseling Therapy Services',
-  description: 'Professional clinical psychology and counseling therapy services for mental health and wellness.',
-  metadataBase: new URL('https://alvaroridge.com'),
-  openGraph: {
-    type: 'website',
-    url: 'https://alvaroridge.com',
-    title: 'Alvaro Ridge - Clinical Psychology and Counseling Therapy Services',
-    description: 'Professional clinical psychology and counseling therapy services for mental health and wellness.',
-    siteName: 'Alvaro Ridge Psychology',
-  },
+export async function generateMetadata(): Promise<Metadata> {
+  const isSpanish = headers().get('x-locale') === 'es'
+  const title = isSpanish
+    ? 'Alvaro Ridge - Psicología clínica y servicios de terapia'
+    : 'Alvaro Ridge - Clinical Psychology and Counseling Therapy Services'
+  const description = isSpanish
+    ? 'Servicios profesionales de psicología clínica y terapia para la salud mental y el bienestar.'
+    : 'Professional clinical psychology and counseling therapy services for mental health and wellness.'
+
+  return {
+    title,
+    description,
+    metadataBase: new URL('https://alvaroridge.com'),
+    openGraph: {
+      type: 'website',
+      url: 'https://alvaroridge.com',
+      title,
+      description,
+      siteName: 'Alvaro Ridge Psychology',
+      locale: isSpanish ? 'es_ES' : 'en_US',
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description,
+    },
+  }
 }
 
 export default function RootLayout({
