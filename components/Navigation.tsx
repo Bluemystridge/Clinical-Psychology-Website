@@ -23,7 +23,7 @@ export default function Navigation() {
         { href: '/services', label: 'Services' },
         { href: '/contact', label: 'Contact', primary: true },
       ]
-  const languageLabel = isSpanish ? 'English' : 'Español'
+  const languageLabel = isSpanish ? 'ENG' : 'ESP'
 
   const closeMenu = () => setIsOpen(false)
 
@@ -34,31 +34,38 @@ export default function Navigation() {
           Alvaro Ridge
         </Link>
         
-        <div className="hidden md:flex items-center space-x-8">
-          {links.map(({ href, label, primary }) => (
-            <Link
-              key={href}
-              href={href}
-              className={primary
-                ? 'bg-primary text-white px-4 py-2 rounded hover:bg-opacity-90 transition'
-                : 'text-gray-700 hover:text-primary transition'}
-            >
-              {label}
-            </Link>
-          ))}
-          <Link href={languageHref} hrefLang={isSpanish ? 'en' : 'es'} className="text-gray-700 hover:text-primary transition">
+        <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center space-x-8">
+            {links.map(({ href, label, primary }) => (
+              <Link
+                key={href}
+                href={href}
+                className={primary
+                  ? 'bg-primary text-white px-4 py-2 rounded hover:bg-opacity-90 transition'
+                  : 'text-gray-700 hover:text-primary transition'}
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+          <Link
+            href={languageHref}
+            hrefLang={isSpanish ? 'en' : 'es'}
+            aria-label={isSpanish ? 'Switch language to English' : 'Cambiar idioma a español'}
+            title={isSpanish ? 'English' : 'Español'}
+            className="text-xs font-semibold tracking-wide text-gray-500 hover:text-primary border border-gray-200 rounded px-2 py-1 transition"
+          >
             {languageLabel}
           </Link>
+          <button 
+            className="md:hidden text-primary text-2xl"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? (isSpanish ? 'Cerrar menú' : 'Close menu') : (isSpanish ? 'Abrir menú' : 'Open menu')}
+            aria-expanded={isOpen}
+          >
+            ☰
+          </button>
         </div>
-
-        <button 
-          className="md:hidden text-primary text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? (isSpanish ? 'Cerrar menú' : 'Close menu') : (isSpanish ? 'Abrir menú' : 'Open menu')}
-          aria-expanded={isOpen}
-        >
-          ☰
-        </button>
       </div>
 
       {isOpen && (
@@ -75,9 +82,6 @@ export default function Navigation() {
               {label}
             </Link>
           ))}
-          <Link href={languageHref} hrefLang={isSpanish ? 'en' : 'es'} onClick={closeMenu} className="block text-gray-700 hover:text-primary">
-            {languageLabel}
-          </Link>
         </div>
       )}
     </nav>
