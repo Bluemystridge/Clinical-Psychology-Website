@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -21,8 +22,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const locale = headers().get('x-locale') === 'es' ? 'es' : 'en'
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className="flex flex-col min-h-screen bg-gray-50">
         <Navigation />
         <main className="flex-grow">
